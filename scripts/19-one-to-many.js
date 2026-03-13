@@ -206,7 +206,7 @@ async function demoGetAll() {
   // Separate parent from children in application code
   let customer = null;
   const orders = [];
-
+  console.log("result.Items", result.Items)
   result.Items.forEach((item) => {
     if (item.SK === 'PROFILE') {
       customer = item;
